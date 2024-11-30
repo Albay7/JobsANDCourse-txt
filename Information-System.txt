@@ -1,0 +1,35 @@
+COURSES
+INFORMATION SYSTEM
+Course Description
+
+The information System program provides students with foundation knowledge on organizations and Information and Communication
+Technology (ICT). It allows students to understand how ICT can enable organizations to improve performance and achieve competitive
+advantage. It trains students to develop strong analytical, technical and leadership skills to thrive in a global environment as future
+information systems professionals.
+
+Information Systems (IS) is the study of how technology, people, and processes work together to collect, manage, and use information in
+organizations. This course focuses on understanding how businesses use systems and tools to improve operations, make decisions, and
+solve problems. Unlike pure computer science, Information Systems combines technology with business principles, teaching students
+how to analyze and design systems that support organizational goals. The course is ideal for those interested in both technology and how
+it applies to business strategies and management.
+
+What to learn
+
+Students in an Information Systems course develop a blend of technical and business skills, such as:
+
+     Understanding how information systems support business operations and decision-making.
+     Learning to design, develop, and implement information systems.
+     Exploring databases, data analysis, and system modeling.
+     Studying enterprise systems like CRM (Customer Relationship Management) and ERP (Enterprise Resource Planning).
+     Learning about cybersecurity and how to protect information assets.
+     Analyzing the impact of technology on organizations and their strategies.
+
+The course also focuses on problem-solving, teamwork, and communication skills, as IS professionals often act as a bridge between
+technical teams and business leaders.
+
+Average tuition per semester
+
+The tuition for an Information Systems course varies widely, typically ranging from P60,000 to P80,000 per semester, depending on the
+university and region. This investment prepares students for roles in business analysis, systems management, and IT consultancy, where
+technology and business intersect.
+
