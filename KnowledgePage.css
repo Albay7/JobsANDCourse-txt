@@ -1,0 +1,185 @@
+/* General Reset */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3e7eb; /* Light blue-gray background */
+    scroll-behavior: smooth; /* Enables smooth scrolling */
+}
+
+/* Header Styling */
+header {
+    background-color: #3e4c5a; /* Dark blue-gray */
+    color: #ffffff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img.logo {
+    height: 40px;
+    object-fit: contain;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    background-color: #5a6979; /* Lighter gray-blue */
+}
+
+/* Main Content Styling */
+main {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333333; /* Neutral gray */
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+/* Grid Section for Buttons */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Six buttons per row */
+    gap: 15px;
+    margin: 20px auto;
+    max-width: 1200px; /* Center the grid with a max width */
+}
+
+.grid button {
+    padding: 15px;
+    background-color: #3e4c5a; /* Dark blue-gray */
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid button a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none;
+    display: block; /* Ensures full button area is clickable */
+}
+
+.grid button:hover {
+    background-color: #5a6979; /* Lighter muted gray-blue */
+}
+
+/* Content Section for Boxes */
+.content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three boxes per row */
+    gap: 20px;
+    max-width: 1200px; /* Center content with max width */
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content .box {
+    background-color: #ffffff; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    min-height: 200px; /* Ensures consistent box height */
+    text-align: left; /* Align text for readability */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.content .box:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.content .box h2 {
+    color: #3e4c5a; /* Match header color */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.content .box p {
+    color: #666666; /* Neutral gray */
+    margin-bottom: 15px;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+
+.content .box a {
+    color: #3e4c5a; /* Match header color */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.content .box a:hover {
+    text-decoration: underline;
+}
+
+/* Highlight animation for the target box */
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+        background-color: #ffffff; /* Default box color */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        background-color: #cfe2f3; /* Temporary highlight color */
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        transform: scale(1);
+        background-color: #ffffff; /* Revert back to default box color */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/* Style for the targeted box */
+:target {
+    animation: highlight 0.6s ease-in-out;
+    scroll-margin-top: 80px; /* Adjust for header overlap if present */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr); /* Four buttons per row */
+    }
+
+    .content {
+        grid-template-columns: repeat(2, 1fr); /* Two boxes per row */
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr); /* Two buttons per row */
+    }
+
+    .content {
+        grid-template-columns: repeat(1, 1fr); /* Single box per row */
+    }
+}
